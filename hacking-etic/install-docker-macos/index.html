@@ -10,23 +10,25 @@
       
       
       
-        <link rel="canonical" href="https://joanmagf.github.io/">
+        <link rel="canonical" href="https://joanmagf.github.io/hacking-etic/install-docker-macos/">
       
       
+        <link rel="prev" href="../install-docker-linux/">
       
-        <link rel="next" href="hacking-etic/UT1/">
+      
+        <link rel="next" href="../install-docker-windows/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Hàcking Ètic</title>
+        <title>Instal·lació de Docker en MacOs - Hàcking Ètic</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -45,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#curs-despecialitzacio-de-ciberseguretat-en-entorns-de-les-tecnologies-de-la-informacio" class="md-skip">
+        <a href="#tutorial-dinstallacio-de-docker-i-verificacio-en-macos" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Hàcking Ètic" class="md-header__button md-logo" aria-label="Hàcking Ètic" data-md-component="logo">
+    <a href="../.." title="Hàcking Ètic" class="md-header__button md-logo" aria-label="Hàcking Ètic" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Inici
+              Instal·lació de Docker en MacOs
             
           </span>
         </div>
@@ -188,11 +190,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -209,11 +209,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="hacking-etic/UT1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../UT1/" class="md-tabs__link">
           
   
   
@@ -249,7 +251,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hàcking Ètic" class="md-nav__button md-logo" aria-label="Hàcking Ètic" data-md-component="logo">
+    <a href="../.." title="Hàcking Ètic" class="md-nav__button md-logo" aria-label="Hàcking Ètic" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -276,6 +278,170 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inici
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Unitat de Treball 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unitat de Treball 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UT1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unitat de Treball: Explotació de Vulnerabilitats Web amb DockerLabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Recursos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-docker-linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instal·lació de Docker en Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -293,7 +459,7 @@
   
   
   <span class="md-ellipsis">
-    Inici
+    Instal·lació de Docker en MacOs
     
   </span>
   
@@ -301,12 +467,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Inici
+    Instal·lació de Docker en MacOs
     
   </span>
   
@@ -329,26 +495,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modul-hacking-etic-5025" class="md-nav__link">
+  <a href="#1-descarregar-docker-desktop" class="md-nav__link">
     <span class="md-ellipsis">
-      Mòdul: Hàcking Ètic (5025)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Mòdul: Hàcking Ètic (5025)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#informacio-completa" class="md-nav__link">
-    <span class="md-ellipsis">
-      Informació completa
+      1. Descarregar Docker Desktop
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#2-installar-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Instal·lar Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-verificar-la-installacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Verificar la instal·lació
+    </span>
+  </a>
   
 </li>
       
@@ -359,141 +528,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Unitat de Treball 1
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Unitat de Treball 1
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hacking-etic/UT1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Unitat de Treball: Explotació de Vulnerabilitats Web amb DockerLabs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Recursos
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            Recursos
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hacking-etic/install-docker-linux/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Instal·lació de Docker en Linux
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -503,30 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/install-docker-macos/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Instal·lació de Docker en MacOs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="hacking-etic/install-docker-windows/" class="md-nav__link">
+      <a href="../install-docker-windows/" class="md-nav__link">
         
   
   
@@ -549,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/download-machines/" class="md-nav__link">
+      <a href="../download-machines/" class="md-nav__link">
         
   
   
@@ -572,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/running-machine/" class="md-nav__link">
+      <a href="../running-machine/" class="md-nav__link">
         
   
   
@@ -595,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/introduction-pentesting/" class="md-nav__link">
+      <a href="../introduction-pentesting/" class="md-nav__link">
         
   
   
@@ -618,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/resources-pentesting/" class="md-nav__link">
+      <a href="../resources-pentesting/" class="md-nav__link">
         
   
   
@@ -649,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hacking-etic/avaluacio/" class="md-nav__link">
+      <a href="../avaluacio/" class="md-nav__link">
         
   
   
@@ -691,14 +702,23 @@
   
 
 
-<h1 id="curs-despecialitzacio-de-ciberseguretat-en-entorns-de-les-tecnologies-de-la-informacio">Curs d'especialització de Ciberseguretat en Entorns de les Tecnologies de la Informació<a class="headerlink" href="#curs-despecialitzacio-de-ciberseguretat-en-entorns-de-les-tecnologies-de-la-informacio" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-dinstallacio-de-docker-i-verificacio-en-macos">📦 Tutorial d'Instal·lació de Docker i Verificació en MacOS<a class="headerlink" href="#tutorial-dinstallacio-de-docker-i-verificacio-en-macos" title="Permanent link">&para;</a></h1>
+<p>Aquest document descriu el procés d'instal·lació de Docker en el sistema operatiu: <strong>MacOS</strong>, així com una <strong>prova ràpida</strong> per verificar que Docker funciona correctament.</p>
 <hr />
-<h2 id="modul-hacking-etic-5025">Mòdul: Hàcking Ètic (5025)<a class="headerlink" href="#modul-hacking-etic-5025" title="Permanent link">&para;</a></h2>
+<h3 id="1-descarregar-docker-desktop">1. Descarregar Docker Desktop<a class="headerlink" href="#1-descarregar-docker-desktop" title="Permanent link">&para;</a></h3>
+<p>Ves al lloc oficial:
+👉 <a href="https://www.docker.com/products/docker-desktop/">https://www.docker.com/products/docker-desktop/</a></p>
+<p>Selecciona <strong>macOS (Intel o Apple Silicon)</strong> segons el teu tipus de processador.</p>
+<h3 id="2-installar-docker">2. Instal·lar Docker<a class="headerlink" href="#2-installar-docker" title="Permanent link">&para;</a></h3>
 <ul>
-<li>120 hores/mòdul</li>
-<li>4 hores/setmana</li>
+<li>Obri el <code>.dmg</code> descarregat i arrossega la icona de Docker a la carpeta <strong>Aplicacions</strong>.</li>
+<li>Executa Docker des de Launchpad o Spotlight.</li>
 </ul>
-<h3 id="informacio-completa"><a href="https://ceice.gva.es/es/web/formacion-profesional/publicador-de-cursos-especialitzacio/-/asset_publisher/MRg14dkTb9DQ/content/ciberseguridad-en-entornos-de-las-tecnolog%C3%ADas-de-la-informaci%C3%B3n?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ_assetEntryId=390408754">Informació completa</a><a class="headerlink" href="#informacio-completa" title="Permanent link">&para;</a></h3>
+<h3 id="3-verificar-la-installacio">3. Verificar la instal·lació<a class="headerlink" href="#3-verificar-la-installacio" title="Permanent link">&para;</a></h3>
+<p>Obri una terminal i escriu:
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
+</code></pre></div></p>
+<p><a href="../UT1/">Torna a la Unitat de Treball</a></p>
 
 
 
@@ -753,10 +773,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
