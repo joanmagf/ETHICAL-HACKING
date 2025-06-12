@@ -1,0 +1,45 @@
+site_name: Hàcking Ètic
+site_description: Ciberseguretat en diferents entorns
+site_url: https://joanmagf.github.io/
+
+repo_url: https://github.com/joanmagf/ETHICAL-HACKING
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+nav:
+  - Inici: index.md
+  - Unitat de Treball 1:
+      - hacking-etic/UT1.md
+      - Recursos:
+        - Instal·lació de Docker en Linux: hacking-etic/install-docker-linux.md
+        - Instal·lació de Docker en MacOs: hacking-etic/install-docker-macos.md
+        - Instal·lació de Docker en Windows: hacking-etic/install-docker-windows.md
+        - Descarregar màquina de DockerLabs: hacking-etic/download-machines.md
+        - Llançar màquina de DockerLabs: hacking-etic/running-machine.md
+        - Introducció a pentesting: hacking-etic/introduction-pentesting.md
+        - Més recursos: hacking-etic/resources-pentesting.md
+      - Avaluació: hacking-etic/avaluacio.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
